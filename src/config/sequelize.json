@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "projetoaws777",
+    "database": "projeto_integrador",
+    "host": "database-pi2021.cfjhutwcwdrb.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "projetoaws777",
+    "database": "projeto_integrador",
+    "host": "database-pi2021.cfjhutwcwdrb.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
