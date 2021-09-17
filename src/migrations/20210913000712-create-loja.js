@@ -10,13 +10,10 @@ module.exports = {
       },
       cnpj_loja: {
         type: Sequelize.STRING(14),
-        allowNull:false
+        allowNull:false,
+        unique:true,
       },
       status_loja: {
-        type: Sequelize.STRING,
-        allowNull:false
-      },
-      cnpj_loja: {
         type: Sequelize.STRING,
         allowNull:false
       },
