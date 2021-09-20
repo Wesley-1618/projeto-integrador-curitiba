@@ -14,7 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   dado_bancario.init({
-    id_cnpj: DataTypes.STRING
+    id_cnpj: DataTypes.STRING(14),
+    nome_banco: DataTypes.TEXT,
+    codigo_banco: DataTypes.TEXT,
+    agencia: DataTypes.TEXT,
+    numero_conta_corrente: DataTypes.TEXT,
   }, {
     sequelize,
     modelName: 'dado_bancario',

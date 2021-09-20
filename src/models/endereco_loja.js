@@ -14,7 +14,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   endereco_loja.init({
-    uf: DataTypes.TEXT
+    id: DataTypes.INTEGER,
+    id_cnpj: DataTypes.STRING(14),
+    uf: DataTypes.TEXT,
+    cidade: DataTypes.TEXT,
+    bairro: DataTypes.TEXT,
+    tipo_logradouro: DataTypes.TEXT,
+    logradouro: DataTypes.TEXT,
+    numero: DataTypes.TEXT,
+    complemento: DataTypes.TEXT,
+    cep: DataTypes.TEXT,
   }, {
     sequelize,
     modelName: 'Endereco_loja',

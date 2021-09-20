@@ -15,9 +15,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Usuario_loja.init({
-    cpf_usuario: DataTypes.STRING,
-    cnpj_loja: DataTypes.STRING,
-    perfil: DataTypes.STRING,
+    cpf_usuario: DataTypes.STRING(11),
+    cnpj_loja: DataTypes.STRING(14),
+    perfil: DataTypes.STRING(30),
     data_hora_cadastro: DataTypes.DATE,
   }, {
     sequelize,
