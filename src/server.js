@@ -10,7 +10,7 @@ const routeLojaEndereco = require ('./routes/routes_LojaEndereco');
 const routeDadosBancarios = require('./routes/routes_DadosBancarios');
 const routeUsuarioEndereco = require('./routes/routes_UsuarioEndereco');
 const routeUsuarioLoja = require('./routes/routes_UsuarioLoja');
-const port = 3000;
+const port = process.env.HOST_PORT;
 const app = express ();
 app.use(express.json());
 
