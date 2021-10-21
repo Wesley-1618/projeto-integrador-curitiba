@@ -8,6 +8,11 @@ module.exports = {
         
         return res.json(loja);
     },
+    async fetchall(req, res){
+        const loja = await Loja.findAll();
+
+        return res.json(loja)
+    },
     async store(req, res){
         const{ cnpj_loja, status_loja, tipo_loja, inscricao_estadual, inscricao_municipal, ramo_negocio, motivo_aprovacao, percentual_clipse, razao_social, site } = req.body;
         

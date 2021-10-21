@@ -1,0 +1,12 @@
+.email {
+    position: absolute;
+    color:rgb(0, 0, 0);
+    font: caption;
+    font-size:medium ;
+    text-align: center;
+    opacity: 1;
+}
+
+.imagem {
+    opacity: 0.3;
+}

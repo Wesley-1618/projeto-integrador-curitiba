@@ -11,7 +11,10 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "handlebars": "^4.7.7",
     "jslib": "^1.1.0",
+    "nodemailer": "^6.7.0",
+    "nodemailer-express-handlebars": "^4.0.0",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
     "reflect-metadata": "^0.1.13",
@@ -19,7 +22,7 @@
     "typeorm": "^0.2.37"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.13",
     "sequelize-cli": "^6.2.0",
     "typescript": "^4.4.3"
   }
