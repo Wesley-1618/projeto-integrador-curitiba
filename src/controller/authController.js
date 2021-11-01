@@ -6,8 +6,8 @@ const mailer = require('../email/modules/mailer');
 
 module.exports = {
 
-    async gerar_token(req, res){
-        const { cpf_usuario, email } = req.body;
+    async gerar_token( req, res ){
+        const { cpf_usuario, email } = req.query;
         try{
             const user = await Usuario.findOne({where : {cpf_usuario, email}}); 
             const token = await KeyReset.findOne({ where : {id_cpf: cpf_usuario}}); 
@@ -71,8 +71,8 @@ module.exports = {
         }
     },
 
-    async reset_senha(req, res){
-        const {cpf_usuario,email, passwordToken, senha} = req.body;
+    async reset_senha( req, res ){
+        const {cpf_usuario,email, passwordToken, senha} = req.query;
 
         try{
             const user = await Usuario.findOne({ where : {cpf_usuario, email}});

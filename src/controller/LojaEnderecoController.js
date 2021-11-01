@@ -1,8 +1,8 @@
 const Endereco = require('../models/endereco_loja');
 
 module.exports = {
-    async index(req, res){
-        const {id_cnpj} = req.body;
+    async index( req, res ){
+        const {id_cnpj} = req.query;
         const endereco = await Endereco.findOne({ where : {id_cnpj} });
         return res.json(endereco);
     },

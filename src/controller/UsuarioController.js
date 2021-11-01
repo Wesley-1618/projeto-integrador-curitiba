@@ -2,7 +2,7 @@ const Usuario = require('../models/usuario');
 
 module.exports  = {
     async index( req, res ){
-        const { cpf_usuario } = req.body;
+        const { cpf_usuario } = req.query;
         const usuario = await Usuario.findOne({ where: {cpf_usuario}});
 
         return res.json(usuario);

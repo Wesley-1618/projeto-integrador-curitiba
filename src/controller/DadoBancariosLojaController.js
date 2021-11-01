@@ -1,8 +1,8 @@
 const Dados = require('../models/dado_bancario');
 
 module.exports = {
-    async index(req, res){
-        const { id_cnpj } = req.body;
+    async index( req, res ){
+        const { id_cnpj } = req.query;
 
         const dadosBancarios = await Dados.findOne({ where: {id_cnpj} });
 

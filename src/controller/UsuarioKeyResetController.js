@@ -1,8 +1,8 @@
 const Keyreset = require('../models/keyreset_usuario');
 
 module.exports = {
-    async index(req,res){
-        const {id_cpf} = req.body;
+    async index( req, res ){
+        const {id_cpf} = req.query;
         const keyreset = await Keyreset.findOne({ where:{id_cpf}});
         return res.json(keyreset);
     },

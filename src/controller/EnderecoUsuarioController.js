@@ -1,8 +1,8 @@
 const Endereco = require('../models/endereco_usuario');
 
 module.exports = {
-    async index(req , res){
-        const {id_cpf} = req.body;
+    async index( req, res ){
+        const {id_cpf} = req.query;
 
         const endereco = await Endereco.findOne({ where: {id_cpf}});
 

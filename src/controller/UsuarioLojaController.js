@@ -1,8 +1,8 @@
 const UsuarioLojaModel = require('../models/usuario_loja');
 
 module.exports = {
-    async index(req, res){
-        const {cpf_usuario, cnpj_loja} = req.body;
+    async index( req, res ){
+        const {cpf_usuario, cnpj_loja} = req.query;
 
         const usuarioLoja = await UsuarioLojaModel.findOne({where:{cpf_usuario, cnpj_loja}} );
 
