@@ -15,7 +15,7 @@ module.exports = {
             if(!user){
                 res.status(400).send({error: 'Usuario nao encontrado, tente novamente!'})
             }else if(!token){
-                const token = crypto.randomBytes(20).toString('hex');
+                const token = crypto.randomBytes(6).toString('hex');
                 const datenow =  new Date();
                 datenow.setMinutes(datenow.getMinutes()+30);
                 
