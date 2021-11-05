@@ -38,7 +38,7 @@ module.exports = {
                     res.send();
                 })
             }else{
-                const token = crypto.randomBytes(20).toString('hex');
+                const token = crypto.randomBytes(6).toString('hex');
                 const datenow =  new Date();
                 datenow.setMinutes(datenow.getMinutes()+30);
 
