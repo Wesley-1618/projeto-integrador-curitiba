@@ -91,7 +91,7 @@ module.exports = {
                         cpf_usuario : cpf_usuario
                     }
                 })
-                res.send();
+                return res.json(alteracaoPassword);
             }
 
         }catch(err){
@@ -101,11 +101,11 @@ module.exports = {
 
     async confere_token ( req, res ){
         const { passwordToken } = req.query;
+        const response = await KeyReset.findOne({ where : { passwordToken } });
 
-        if(!passwordToken){
+        if(!response){
             res.status(400).send("token invalido!")
         }else{
-            const response = await KeyReset.findOne({ where : { passwordToken } });
             return res.json(response);
         }
     }
