@@ -4,7 +4,7 @@ const {
 } = require('sequelize');
 
   class simulacao_emprestimo extends Model {
-    static init(seuqlize){
+    static init(sequelize){
       super.init({
         cpf_usuario: DataTypes.STRING(11),
         financeira: DataTypes.STRING, 
