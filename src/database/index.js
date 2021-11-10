@@ -6,6 +6,7 @@ const LojaDadoBancarioConect = require('../models/dado_bancario');
 const UsuarioEnderecoConect = require('../models/endereco_usuario');
 const UsuarioLojaConect = require('../models/usuario_loja');
 const UsuarioKeyResetConect = require('../models/keyreset_usuario');
+const SimulacaoEmprestimoConect = require('../models/simulacao_emprestimo');
 
 const link = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
     host: process.env.DB_HOST,
@@ -30,3 +31,4 @@ LojaDadoBancarioConect.init(link);
 UsuarioEnderecoConect.init(link);
 UsuarioLojaConect.init(link);
 UsuarioKeyResetConect.init(link);
+SimulacaoEmprestimoConect.init(link);
