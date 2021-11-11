@@ -17,6 +17,12 @@ module.exports = {
         const simulacao = await Simulacao.findAll({ where : {cpf_usuario}});
 
         return res.json(simulacao);
-    }
+    },
     
+    async fetchallsimulations ( req, res ){
+        const simulacao = await Simulacao.findAll();
+
+        return res.json(simulacao);
+    }
+
 };
