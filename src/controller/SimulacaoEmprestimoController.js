@@ -2,13 +2,11 @@ const Simulacao = require('../models/simulacao_emprestimo');
 
 module.exports = {
     async store( req, res){
-        const {cpf_usuario,financeira,renda_mensal,valor_emprestimo,tarifa,parcelas,cet,iof,valor_total} = req.body;
+        const {cpf_usuario,financeira,renda_mensal,valor_emprestimo,tarifa,parcelas,cet,iof,valor_total, data_parcela} = req.body;
 
-        const simulacao = await Simulacao.create({cpf_usuario,financeira,renda_mensal,valor_emprestimo,tarifa,parcelas,cet,iof,valor_total});
+        const simulacao = await Simulacao.create({cpf_usuario,financeira,renda_mensal,valor_emprestimo,tarifa,parcelas,cet,iof,valor_total, data_parcela});
 
         return res.json(simulacao);
-
-        
     },
 
     async fetchall ( req, res ){

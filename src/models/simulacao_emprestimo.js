@@ -14,7 +14,8 @@ const {
         parcelas: DataTypes.INTEGER,
         cet: DataTypes.DOUBLE,
         iof: DataTypes.DOUBLE,
-        valor_total: DataTypes.REAL
+        valor_total: DataTypes.REAL,
+        data_parcela: DataTypes.DATE
       },{
         sequelize,
       })

@@ -48,6 +48,10 @@ module.exports = {
         type: Sequelize.REAL,
         allowNull: false,
       },
+      data_parcela:{
+        type: Sequelize.DATE,
+        allowNull:false
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
