@@ -15,13 +15,18 @@ module.exports = {
             if(!user){
                 res.status(400).send({error: 'Usuario nao encontrado, tente novamente!'})
             }else if(!token){
-                const token = crypto.randomBytes(4).toString('hex');
+                //const token = crypto.randomBytes(10).toString('hex');
+                var tokenNew = "";
+                for (var x = 0; x<6; x++){
+                    tokenNew = tokenNew + crypto.randomInt(10).toString();
+                }
+
                 const datenow =  new Date();
                 datenow.setMinutes(datenow.getMinutes()+30);
                 
                 await KeyReset.create({
                     id_cpf: cpf_usuario,
-                    passwordToken: token , 
+                    passwordToken: tokenNew , 
                     passwordTokenExpires: datenow
                 })
 
@@ -30,7 +35,7 @@ module.exports = {
                     to: email,
                     subject: "Es-21 Financeira",
                     template: 'recuperacao_senha',
-                    context: {token}
+                    context: {tokenNew}
                 },(err)=>{
                     if(err){
                         res.status(400).send({erro:'Erro no envio do email, verifique e tente novamente!'})
@@ -38,12 +43,15 @@ module.exports = {
                     res.send();
                 })
             }else{
-                const token = crypto.randomBytes(4).toString('hex');
+                var tokenNew = "";
+                for (var x = 0; x<6; x++){
+                    tokenNew = tokenNew + crypto.randomInt(10).toString();
+                }
                 const datenow =  new Date();
                 datenow.setMinutes(datenow.getMinutes()+30);
 
                 await KeyReset.update({
-                    passwordToken:token,
+                    passwordToken:tokenNew,
                     passwordTokenExpires:datenow,
                 },{
                     where: {
@@ -56,7 +64,7 @@ module.exports = {
                     to: email,
                     subject: "Es-21 Financeira",
                     template: 'recuperacao_senha',
-                    context: {token}
+                    context: {tokenNew}
                 },(err)=>{
                     if(err){
                         res.status(400).send({erro:'Erro no envio do email, verifique e tente novamente!'})
