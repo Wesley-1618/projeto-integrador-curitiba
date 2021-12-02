@@ -19,5 +19,12 @@ module.exports = {
         const loja = await Loja.create({ cnpj_loja, status_loja, tipo_loja, inscricao_estadual, inscricao_municipal, ramo_negocio, motivo_aprovacao, percentual_clipse, razao_social, site });
 
         return res.json(loja);
+    },
+    async fetchName( req, res ){
+        const {razao_social} = req.query;
+
+        const loja = await Loja.findOne({where : {razao_social}});
+
+        return res.json(loja);
     }
 };
