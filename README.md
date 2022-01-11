@@ -1,9 +1,9 @@
-# Api Rest hospedada no Heroku para o Projeto Integrador🎓
+# Api Rest Hospedada no Heroku para o Projeto Integrador🎓
 
 -👨‍💻 por Wesley Oliveira
 
 
-## ⚙ ROUTES DA API
+## ⚙ Routes da Api
 
 ### ⇛ Loja
 
