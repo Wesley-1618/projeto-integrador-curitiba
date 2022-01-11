@@ -5,7 +5,7 @@
 
 ## 🎯 ROUTES DA API
 
-### Loja
+### ⛓Loja
 
 <div>
   <p>-/loja/all (GET)</p>
@@ -20,7 +20,7 @@
 
 ##
 
-### Usuario
+### ⛓Usuario
 <div>
   <p>-/usuario/keyreset (GET)</p>
   <p>-/usuario/all (GET)</p>
@@ -32,7 +32,7 @@
 
 ##
 
-### Usuario_Loja
+### ⛓Usuario_Loja
 <div>
   <p>-/usuario/loja (POST)</p>
   <p>-/usuario/loja (GET)</p>
@@ -40,7 +40,7 @@
 
 ##
 
-### Authenticate
+### ⛓Authenticate
 <div>
   <p>-/auth/token?cpf_usuario=.. (GET)</p>
   <p>-/auth/token/confere?passwordToken=.. (GET)</p>
