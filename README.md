@@ -1,4 +1,4 @@
-# Api Rest hospedada no Heroku para o Projeto Integrador 🎓
+# Api Rest hospedada no Heroku para o Projeto Integrador🎓
 
 -👨‍💻 por Wesley Oliveira
 
