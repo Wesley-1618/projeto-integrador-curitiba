@@ -46,3 +46,5 @@
   <p>• /auth/token/confere?passwordToken=.. (GET)</p>
   <p>• /auth/senha (GET)</p>
 </div>
+
+##
