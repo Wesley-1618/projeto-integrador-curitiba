@@ -7,8 +7,6 @@
 
 ### Loja
 
-##
-
 <div>
   <p>-/loja/all (GET)</p>
   <p>-/loja/dadoBancario (POST)</p>
@@ -20,8 +18,6 @@
   <p>-/loja/endereco (GET)</p>
 </div>
 
-##
-
 ### Usuario
 <div>
   <p>-/usuario/keyreset (GET)</p>
@@ -32,13 +28,11 @@
   <p>-/usuario?cpf_usuario=.. (GET)</p>
 </div>
 
-
 ### Usuario_Loja
 <div>
   <p>-/usuario/loja (POST)</p>
   <p>-/usuario/loja (GET)</p>
 </div>
-
 
 ### Authenticate
 <div>
@@ -46,4 +40,3 @@
   <p>-/auth/token/confere?passwordToken=.. (GET)</p>
   <p>-/auth/senha (GET)</p>
 </div>
-
