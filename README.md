@@ -1,11 +1,11 @@
-## Api hospedada no Heroku para suprir as necessidades da aplicação do Projeto Integrador 🎓
+# Api hospedada no Heroku para suprir as necessidades da aplicação do Projeto Integrador 🎓
 
 -👨‍💻 por Wesley Oliveira
 
 
 ## 🎯 ROUTES DA API
 
-<h1>Loja</h1>
+#### Loja
 <div>
   <p>-/loja/all (GET)</p>
   <p>-/loja/dadoBancario (POST)</p>
