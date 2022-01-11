@@ -5,15 +5,17 @@
 ##🎯 ROUTES DA API
 
 *Loja
-
--/loja/all (GET)
--/loja/dadoBancario (POST)
--/loja/dadoBancario?id_cnpj=.. (GET)
--/loja (POST)
--/loja (GET)
--/loja/razao_social?razao_social=.. (GET)
--/loja/endereco (POST)
--/loja/endereco (GET)
+<div>
+  <p>-/loja/all (GET)</p>
+  <p>-/loja/dadoBancario (POST)</p>
+  <p>-/loja/dadoBancario?id_cnpj=.. (GET)</p>
+  <p>-/loja (POST)</p>
+  <p>-/loja (GET)</p>
+  <p>-/loja/razao_social?razao_social=.. (GET)</p>
+  <p>-/loja/endereco (POST)</p>
+  <p>-/loja/endereco (GET)</p>
+  <p></p>
+</div>
 
 *Usuario
 
