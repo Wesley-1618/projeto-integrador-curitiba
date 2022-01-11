@@ -2,6 +2,7 @@
 
 -👨‍💻 por Wesley Oliveira
 
+
 ##🎯 ROUTES DA API
 
 *Loja
@@ -14,25 +15,30 @@
   <p>-/loja/razao_social?razao_social=.. (GET)</p>
   <p>-/loja/endereco (POST)</p>
   <p>-/loja/endereco (GET)</p>
-  <p></p>
 </div>
 
 *Usuario
+<div>
+  <p>-/usuario/keyreset (GET)</p>
+  <p>-/usuario/all (GET)</p>
+  <p>-/usuario/endereco (POST)</p>
+  <p>-/usuario/endereco (GET)</p>
+  <p>-/usuario (POST)</p>
+  <p>-/usuario?cpf_usuario=.. (GET)</p>
+</div>
 
--/usuario/keyreset (GET)
--/usuario/all (GET)
--/usuario/endereco (POST)
--/usuario/endereco (GET)
--/usuario (POST)
--/usuario?cpf_usuario=.. (GET)
 
 *Usuario_Loja
+<div>
+  <p>-/usuario/loja (POST)</p>
+  <p>-/usuario/loja (GET)</p>
+</div>
 
--/usuario/loja (POST)
--/usuario/loja (GET)
 
 *Authenticate
+<div>
+  <p>-/auth/token?cpf_usuario=.. (GET)</p>
+  <p>-/auth/token/confere?passwordToken=.. (GET)</p>
+  <p>-/auth/senha (GET)</p>
+</div>
 
--/auth/token?cpf_usuario=.. (GET)
--/auth/token/confere?passwordToken=.. (GET)
--/auth/senha (GET)
