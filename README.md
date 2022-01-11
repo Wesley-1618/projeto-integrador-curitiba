@@ -5,7 +5,7 @@
 
 ## 🎯 ROUTES DA API
 
-#### Loja
+### Loja
 <div>
   <p>-/loja/all (GET)</p>
   <p>-/loja/dadoBancario (POST)</p>
