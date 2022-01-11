@@ -17,7 +17,7 @@
   <p>-/loja/endereco (GET)</p>
 </div>
 
-<h1>Usuario</h1>
+### Usuario
 <div>
   <p>-/usuario/keyreset (GET)</p>
   <p>-/usuario/all (GET)</p>
@@ -28,14 +28,14 @@
 </div>
 
 
-<h1>Usuario_Loja</h1>
+### Usuario_Loja
 <div>
   <p>-/usuario/loja (POST)</p>
   <p>-/usuario/loja (GET)</p>
 </div>
 
 
-<h1>Authenticate</h1>
+### Authenticate
 <div>
   <p>-/auth/token?cpf_usuario=.. (GET)</p>
   <p>-/auth/token/confere?passwordToken=.. (GET)</p>
