@@ -7,7 +7,7 @@
 
 ### Loja
 
-####
+##
 
 <div>
   <p>-/loja/all (GET)</p>
@@ -20,7 +20,7 @@
   <p>-/loja/endereco (GET)</p>
 </div>
 
-####
+##
 
 ### Usuario
 <div>
